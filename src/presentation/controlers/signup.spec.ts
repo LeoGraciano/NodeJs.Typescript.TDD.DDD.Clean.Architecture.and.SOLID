@@ -118,6 +118,6 @@ describe('SingUp Controller', () => {
     }
     sut.handle(httpRequest)
 
-    expect(isValidSpy).toBeCalledWith('any_email@mail.com')
+    expect(isValidSpy).toHaveBeenCalledWith('any_email@mail.com')
   })
 })
