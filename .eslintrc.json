@@ -8,10 +8,12 @@
   "extends": "standard-with-typescript",
   "overrides": [],
   "parserOptions": {
-    "ecmaVersion": "latest",
-    "project": "./.tsconfig.json"
+    "ecmaVersion": 6,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
   "rules": {
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/consistent-type-imports": "off"
   }
 }
